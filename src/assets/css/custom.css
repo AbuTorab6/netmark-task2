@@ -1,0 +1,1005 @@
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{   
+    font-family: 'Roboto', sans-serif;
+
+
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+
+}
+
+.row
+{
+    width: 134rem;
+    margin: auto;
+}
+
+section
+{
+    overflow: hidden;
+    padding: 5rem 0rem;
+}
+
+
+/***************************************/
+/**********Navigation*****************/
+/***************************************/
+
+.navigation-background
+{
+    background-color: white !important;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.193);
+
+}
+
+
+
+.navLogo
+{
+    width: 13rem;
+}
+
+
+.navigation-list
+{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-top: 0.65rem;
+
+}
+
+.navigation-list::after
+{
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    display: block;
+    background-color:rgb(98, 120, 255);
+    transition: 0.3s;
+}
+
+.navigation-list:hover
+{
+    color: #6278FF;
+    /* border-bottom: 0.2rem solid  #6278FF; */
+    
+}
+
+.navigation-list:hover::after
+{
+   
+    width: 100%;
+}
+
+
+.navigation-background-scroll
+{
+    background-color: white !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    z-index: 2 !important;
+
+    box-shadow: 0.5rem 0.5rem 2rem #656566;
+}
+
+
+.nav-right
+{
+    margin-left: 10rem;
+}
+
+
+.nav-right .nav-log-in
+{
+    font-size: 1.4rem;
+    font-weight:500;
+    border:0rem;
+    padding: 0.4rem 2rem;
+    background-color: white;
+
+    color: #6278FF;
+    text-decoration: none;
+}
+
+.nav-right .nav-log-in:active
+{
+    
+    border:0.2rem solid #6278FF;
+
+    border-radius: 1rem;
+    background-color: #6278FF;
+    color: white !important ;
+}
+
+
+
+
+.nav-right .nav-sign-up
+{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    border:0.2rem solid #6278FF;
+    padding: 0.4rem 2rem;
+
+    border-radius: 1rem;
+    background-color: #6278FF;
+    color: white;
+    margin-left: 1rem;
+}
+
+.nav-right .nav-sign-up:active
+{
+    
+    border:0.2rem solid #6278FF;
+
+    border-radius: 1rem;
+   
+    background-color: transparent;
+    color: #6278FF;
+}
+
+.nav-right .nav-sign-up:active a
+{
+    color: #6278FF;
+}
+
+
+
+/***************************************/
+/**********Hero Section*****************/
+/***************************************/
+
+.modal-btn
+{
+    font-size: 1.5rem !important;
+    background-color: crimson;
+    border: 0rem;
+
+}
+.hero-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 15em;
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.173);
+}
+
+.hero-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem 3rem;
+
+    margin-top: 13rem;
+}
+
+.hero-grid h1
+{
+    font-size: 7.2rem;
+    font-weight: 600;
+}
+
+.hero-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #475569;
+    margin-top: 2rem;
+}
+
+.hero-grid-top
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 2rem;
+}
+.hero-grid-top .input-field
+{
+    position: relative;
+}
+.hero-grid-top input
+{
+    width: 90%;
+    height: 4.8rem;
+    font-size: 1.8rem;
+    color: #475569;
+    border: 0.1rem solid rgba(0, 0, 0, 0.108);
+    border-radius: 0.2rem;
+    /* border-left: 0rem; */
+    padding-left: 4rem;
+}
+
+.hero-grid-top span
+{
+    position: absolute;
+    left: 0rem;
+    font-size: 1.8rem;
+    /* border: 0.1rem solid rgba(0, 0, 0, 0.108); */
+    /* border-right: 0rem;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem; */
+    padding: 1rem 1rem;
+    color: #475569;
+    /* padding-right: 2rem; */
+}
+
+.hero-grid-top input:focus 
+{
+    outline: transparent;
+}
+
+.hero-grid-top button
+{
+    font-size: 1.6rem;
+    background-color: #2563EB;
+    color: white;
+    border:0rem;
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+
+.hero-grid-bottom
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
+
+    background-color: rgb(241, 245, 249);
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    
+
+    
+}
+
+.hero-grid-bottom .img
+{
+  margin:1.5rem 2rem;
+}
+
+.hero-grid .right
+{
+    position: relative;
+}
+
+.hero-grid .right .heroImg
+{
+    width: 90%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+
+    z-index: 1;
+}
+
+.hero-grid .right .heroImg:hover
+{
+    cursor: pointer;
+}
+
+.hero-grid .right .heroStar
+{
+    width: 20%;
+    position: absolute;
+    right: 2rem;
+    bottom: -6rem;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Enjoy Section****************/
+/***************************************/
+
+.enjoy-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* height: 80vh; */
+}
+
+
+.enjoy-section .enjoy-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 4rem 1rem;
+    margin-top: 5rem;
+}
+
+.enjoy-section .enjoy-grid .enjoyImage
+{
+    width: 100%;
+    position: relative;
+}
+
+.enjoy-section .enjoy-grid .enjoyImg
+{
+    width: 75%;
+    position: absolute;
+    right: 8rem;
+    z-index: 1;
+}
+
+
+.enjoy-section .enjoy-grid .enjoyStar
+{
+    width: 20%;
+    position: absolute;
+    z-index: 0;
+    top: 12rem;
+    left: 5rem;
+}
+
+
+.enjoy-section .enjoy-grid h2
+{
+    font-size: 5.8rem;
+    font-weight: 800;
+    margin-top: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+.enjoy-section .enjoy-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #475569;
+    margin-top: 2rem;
+}
+
+.enjoy-section .enjoy-grid span
+{
+    display: inline-block;
+    color: #2563EB;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.enjoy-section .enjoy-grid span:hover
+{
+    cursor: pointer;
+}
+.enjoy-section .enjoy-grid .small-screen
+{
+    display: none;
+}
+
+
+
+
+/***************************************/
+/***********Tool Section****************/
+/***************************************/
+
+.tool-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.tool-section .tool-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem 8rem;
+    margin-top: 5rem;
+}
+
+.tool-section .tool-grid .toolImage
+{
+    width: 100%;
+}
+
+.tool-section .tool-grid .toolImg
+{
+    width: 70%;
+}
+
+
+
+.tool-section .tool-grid h2
+{
+    font-size: 5.8rem;
+    font-weight: 800;
+    margin-top: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+.tool-section .tool-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #475569;
+    margin-top: 2rem;
+}
+
+.tool-section .tool-grid span
+{
+    display: inline-block;
+    color: #2563EB;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.tool-section .tool-grid span:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+/***************************************/
+/***********Solve Section****************/
+/***************************************/
+
+.solve-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.solve-section .row
+{
+    
+    background-image: linear-gradient(rgba(88, 28, 135, 0.86),rgba(88, 28, 135, 0.7)),url('../image/dolveBg.jpg');
+    
+    background-size:cover;
+    background-position: center;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+
+}
+
+
+.solve-grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 6rem 3rem;
+}
+
+
+.solve-section .solve-grid h2
+{
+    font-size: 5.6rem;
+    font-weight: 800;
+    
+    color: white;
+}
+
+.solve-section .solve-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 2rem;
+}
+
+.solve-section .solve-grid span
+{
+    display: inline-block;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.solve-section .solve-grid span:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/***************************************/
+/***********workflow Section************/
+/***************************************/
+.workflow-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.workflow-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3rem 6rem;
+}
+
+.workflow-section .workflow-grid h2
+{
+    font-size: 5.6rem;
+    font-weight: 800;
+    margin-top: 4rem;
+    
+}
+
+.workflow-section .btn-grp
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 2rem;
+}
+.workflow-btn
+{
+    background-color: white;
+    border: 0rem;
+    padding: 0.8rem 1.5rem;
+
+    border:0.1rem solid rgba(128, 128, 128, 0.301);
+
+    font-size: 1.6rem;
+}
+
+.workflow-active-btn
+{
+    background-color: rgb(241, 245, 249)
+}
+
+/* .workflow-section .workflow-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+} */
+
+.workflow-content
+{
+    display: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.workflow-active-content
+{
+    display: block;
+}
+
+.workflow-section .workflow-grid span
+{
+    display: inline-block;
+    color: #2563EB;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.workflow-section .workflow-grid span:hover
+{
+    cursor: pointer;
+}
+
+
+.workflowImage
+{
+    width: 100%;
+}
+
+.workflowImg
+{
+    width: 100%;
+}
+
+.workflowImg:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+/***************************************/
+/****************join Section************/
+/***************************************/
+
+.join-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.join-section .row
+{
+    background: linear-gradient(to right bottom,rgb(30, 63, 169),rgb(110, 27, 117));
+    padding: 8rem 6rem;
+    border-radius: 1rem;
+}
+
+
+
+.join-section  h2
+{
+    font-size: 5.6rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+
+.join-section  p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.join-section  button
+{
+    font-size: 1.6rem;
+    background-color: #2563EB;
+    color: white;
+    border:0rem;
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+/***************************************/
+/****************Footer Section************/
+/***************************************/
+.join-section
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:space-evenly;
+}
+
+.footer-grid p
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    
+}
+
+.footer-grid ul
+{
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+    float: right;
+}
+
+.footer-grid ul li
+{
+    display: inline;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-right: 1.5rem;
+}
+
+.footer-grid ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/***************************************/
+/**********Responsive Design************/
+/***************************************/
+
+
+@media screen and (max-width:1300px)
+{
+    .row
+    {
+        width: 100%;
+        padding: 0rem 4rem;
+    }
+   
+    .hero-grid .right .heroStar
+    {
+        
+        right: 2rem;
+        bottom: -1rem;
+    }
+   
+}
+
+
+
+@media screen and (max-width:1200px)
+{
+    
+    .hero-grid .right .heroStar
+    {
+        display: none;
+    }
+
+    .hero-grid .right .heroImg
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:1024px)
+{
+    html,body
+    {   
+        font-size: 55.5%;
+    }
+
+    .hero-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .hero-grid .right .heroImg
+    {
+        position: inherit;
+    }
+
+    .enjoy-section .enjoy-grid .enjoyImg
+    {
+        width: 90%;
+        position:unset;
+    }
+    .tool-section .tool-grid .toolImg
+    {
+        width: 100%;
+    }
+}
+ 
+
+@media screen and (max-width:994px)
+{
+
+    .navigation-background
+    {
+        text-align:center;
+    }
+
+    .navigation-background-scroll
+    {
+        text-align:center;
+    } 
+
+ 
+    .navigation-list:hover::after
+    {
+    
+        width: 0%;
+    }
+
+    .navigation-list
+    {
+        margin: 1rem;
+    }
+
+    .nav-right .nav-log-in
+    {
+        margin-left: -10rem;
+        margin-top: 2rem;
+    }
+
+
+    .navLogo
+    {
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    html,body
+    {   
+        font-size: 50.5%;
+    }
+
+    .enjoy-section .enjoy-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 4rem;
+    }
+
+    .enjoy-section .enjoy-grid .small-screen
+    {
+        display: block;
+    }
+    .enjoy-section .enjoy-grid .large-screen
+    {
+        display: none;
+    }
+    .enjoy-section .enjoy-grid .enjoyStar
+    {
+        display: none;
+    }
+
+    .enjoy-section .enjoy-grid .enjoyImage
+    {
+        width: 60%;
+        margin: auto;
+    }
+    .enjoy-section .enjoy-grid .enjoyImg
+    {
+      width: 100%;
+    }
+
+    .enjoy-section .enjoy-grid h2
+    {
+        margin-top: 0rem;
+    }
+    .tool-section .tool-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tool-section .tool-grid .toolImg
+    {
+        margin-top: 3rem;
+    }
+
+    .tool-section .tool-grid h2
+    {
+        margin-top: 0rem;
+    }
+
+    .solve-grid
+    {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        padding: 6rem 3rem;
+    }
+
+    .workflow-grid
+    {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 3rem 6rem;
+    }
+
+        
+    .footer-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer-grid p
+    {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    
+    .footer-grid ul
+    {
+        float: unset;
+        text-align: center;
+    }
+
+    .footer-grid ul li
+    {
+        margin-right: 1.8rem;
+    }
+
+   
+
+}
+
+
+
+
+@media screen and (max-width:650px)
+{
+    html,body
+    {   
+        font-size: 45.5%;
+    }
+    .hero-grid-top
+    {
+        grid-template-columns: 50% 50%;
+        grid-gap: 0.5rem;
+    }
+
+    .hero-grid-bottom
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero-grid-top input
+    {
+        width: 100%;
+    }
+
+    .enjoy-section .enjoy-grid .enjoyImage
+    {
+        width: 90%;
+    }
+    .enjoy-section .enjoy-grid .enjoyImg
+    {
+      width: 100%;
+    }
+    .navigation-background
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .navigation-background-scroll
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+}
+
+
+
+
+@media screen and (max-width:520px)
+{
+    html,body
+    {   
+        font-size: 44.5%;
+    }
+    .enjoy-section .enjoy-grid .enjoyImage
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .hero-grid h1
+    {
+        font-size: 6.2rem;
+    }
+    
+}
